@@ -1,0 +1,285 @@
+/*
+etiquetas y pseudoelementos 0,0,0,1
+clases, atributos, pseudoclasses 0,0,1,0
+id 0,1,0,0
+inline 1,0,0,0
+important rompe especificidad
+
+*/
+
+/*esto es mala practica por que son bloqueantes (sincronas)*/
+@import url("/css/otra-hoja-css.css");
+h1{
+    color: orangered;
+    background-color: #000;
+}
+
+p{
+    color: midnightblue;
+} 
+
+/*selectores-basicos*/
+#parrafo-dos{
+    background-color: skyblue;
+}
+.text-20{
+    font-size: 20px;
+}
+
+.text-32{
+    font-size: 32px;
+}
+.bg-skyblue{
+    background-color: skyblue;
+}
+
+.bg-steelblue{
+    background-color: steelblue;
+}
+.text-white{
+    color: white;
+}
+
+/*===========================================================================================================================*/
+/*selectores-avanzados*/
+.hijos-directos > li{
+    background-color: thistle;
+}
+ 
+.hijos-descendientes b{
+    background-color: thistle;
+}
+
+
+/*se aplica a los que esten por debajo del elemento de referencia*/
+.hermanos-general ~ li{
+    background-color: thistle;
+}
+.hermanos-adyacentes + li{
+    background-color: thistle;
+}
+
+/*selectores-atributos*/
+.selectores-atributos a[href]{
+    color: orangered;
+}
+
+.selectores-atributos a[target="_blank"]{
+    font-weight: bold;
+}
+
+.selectores-atributos a[href*="jonmircha"]{
+    font-size: 24px;
+}
+
+.selectores-atributos a[href^="http:"]{
+    text-decoration: none;
+}
+
+.selectores-atributos a[href$=".com"]{
+    background-color: #000;
+}
+/* ~ una lista separada por espacios*/
+.selectores-atributos a[class~="cursos"]{
+    background-color: steelblue;
+}
+
+.selectores-atributos a[class|="menu"]{
+    font-style: italic;
+}
+
+/*selector-universal*/
+.selector-universal *{
+    font-size: 24px;
+}
+
+*{
+    font-family: sans-serif;
+}
+
+/*pseudoclases*/
+/*Pseudoclases: dan estilo dependiendo del contexto, posicion o estado del elemento*/
+.form-pseudoclases *:required{
+    border-color: yellow;
+}
+
+.form-pseudoclases *:valid{
+    border-color: green;
+}
+
+.form-pseudoclases *:invalid{
+    border-color: red;
+}
+
+.form-pseudoclases *:focus{
+    background-color: steelblue;
+}
+
+.form-pseudoclases *:disabled{
+    background-color: pink;
+}
+
+/* :link
+ :active
+ :visited
+ :hover
+ orden de pseudo para etiquetas a
+ */
+ .menu-pseudoclases a:visited{
+    color: olive;
+}
+.menu-pseudoclases a:hover{
+    color: orange;
+}
+.p-pseudoclases:hover{
+    font-size: larger;
+}
+
+#inicio:target{
+    background-color: lightgreen;
+}
+
+/*pseudoclases segun su posicion*/
+.lista-pseudoclases li:first-child{
+    color: green;
+}
+
+.lista-pseudoclases li:last-child{
+    color: pink;
+}
+
+.lista-pseudoclases li:nth-child(3){
+    color: brown;
+}
+
+.lista-pseudoclases li:nth-child(4n){
+    font-size: 20px;
+}
+
+.lista-pseudoclases li:nth-child(even){
+    background-color: yellow;
+}
+
+.lista-pseudoclases li:nth-child(odd){
+    background-color: tomato;
+}
+
+.articulo-pseudoclases p:first-of-type{
+    background-color: pink;
+}
+
+.articulo-pseudoclases p:last-of-type{
+    background-color: violet;
+}
+
+.articulo-pseudoclases p:nth-of-type(2){
+    background-color: blueviolet;
+}
+
+.articulo-pseudoclases *:not(p, .boton, #uno){
+    color:red;
+}
+
+/*pseudoelementos*/
+
+.saga-geminis::before{
+    content: "🛰"; /*tecla windows y punto*/
+}
+
+.saga-geminis::after{
+    content: "🚀";
+}
+
+.saga-precio::before{
+    content: "$";
+    font-weight: bold;
+}
+
+.saga-precio::after{
+    content: " USD";
+    font-weight: bold;
+}
+
+.p-pseudoelementos::first-letter{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.p-pseudoelementos::first-line{
+    color: coral;
+}
+
+.p-pseudoelementos::selection{
+    color: greenyellow;
+    background-color: black;
+}
+
+.input-pseudoelementos::placeholder{
+    color: chartreuse;
+}
+
+/*agrupar-selectores*/
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores textarea{
+    border-color: yellow;
+    border-width: 2px;
+    border-style: dashed;
+    background-color: black;
+    font-size: 20px;
+    display: block;
+    width: 300px;
+}
+
+/*algoritmo-cs*/
+
+blockquote#cita-marco.cita-marco{
+    background-color: lightskyblue;
+}
+
+blockquote{
+    background-color: burlywood;
+}
+
+.cita-marco{
+    background-color: greenyellow !important;
+    font-size: 32px;
+    border-style: dotted;
+    border-color: lightcoral;
+}
+
+#cita-marco{
+    background-color: lightgreen ;
+}
+
+blockquote.cita-marco{
+    background-color: tomato;
+}
+
+.cita-marco{
+    background-color: cornflowerblue;
+}
+
+/*herencia*/
+
+.cita-marco cite{
+    background-color: pink;
+    background-color: inherit;
+    font-size: initial;
+    border-style: inherit;
+    border-color: inherit;
+    
+}
+
+blockquote#cita-marco{
+    background-color: lightsalmon;
+}
+
+
+
+
+
+
+
+
+

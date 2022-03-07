@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/css/reset.css">  -->
+    <!-- <link rel="stylesheet" href="/css/normalize.css"> -->
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+    <style>
+        h1{
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendiendo CSS</h1>
+    <p> <i style="font-weight: bond; color: orangered;"> Cascading style style sheet</i>hojas de estilo en cascada</p>
+
+    <h2 >Temario del curso</h2>
+    <ul id="inicio">
+        <li><a href="index.html#selectores-basicos">Selectores basicos</a></li>
+        <li><a href="index.html#selectores-avanzados">Selectores avanzados</a></li>
+        <li><a href="index.html#selectores-atributos">Selectores de atributos</a></li>
+        <li><a href="index.html#selector-universal">Selector Universal</a></li>
+        <li><a href="index.html#pseudoclases">Pseudoclases</a></li>
+        <li><a href="index.html#pseudoelementos">Pseudoelementos</a></li>
+        <li><a href="index.html#agrupar-selectores">Agrupar Selectores</a></li>
+        <li><a href="index.html#algoritmo-css">El algoritmo de CSS</a></li>
+        <li><a href="index.html#reseteo-nomalizacion">reseteo y nomalizacion</a></li>
+        <li><a href="index.html#prefijos-navegadores">Prefijos en los Navegadores</a></li>
+        <li><a href="box-model.html">Modelo de Caja</a></li>
+    </ul>
+    <hr>
+    <br>
+
+    <article id="selectores-basicos">
+    <h2 >Selectores Basicos</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus atque odio dolore! Magnam nihil sint assumenda, libero possimus, dolorem vel obcaecati expedita voluptas dignissimos maxime dolor ad natus soluta amet?</p>
+
+    <p id="parrafo-dos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque culpa error natus, provident ea cupiditate deserunt illum saepe, officiis et sed quos quas nobis excepturi quae magnam numquam aperiam maxime.</p>
+
+    <p class="text-32 bg-skyblue">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab architecto accusamus qui. Dolor suscipit, et nemo quae quis laboriosam dolore non nulla maxime, laudantium nisi quod, totam quisquam eos tempora.</p>
+
+    <p class="text-20 bg-steelblue text-white">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque nisi quisquam facilis perferendis maxime voluptas voluptates alias corporis nihil? Recusandae quisquam alias porro deserunt totam consequatur ab sed est asperiores.
+    </p>
+
+    <p class="text-32 bg-steelblue text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore numquam praesentium sint asperiores magni laborum quo ut aut velit, eos dolores suscipit non harum magnam quaerat est. Libero, corporis sed!</p>
+    <a href="index.html#inicio">☣️</a>
+    </article>
+<hr>
+    <article id="selectores-avanzados">
+        <h2>Selectores Avanzados</h2>
+        <h3>selectores de hijos</h3>
+        <h4>selector de hijos directos</h4>
+        <ul class="hijos-directos">
+            <li><b>Spring</b></li>
+            <li><b>Summer</b></li>
+            <li><b>Autumn</b></li>
+            <li><b>Winter</b></li>
+        </ul>
+        <h4>selector de hijos descendientes</h4>
+        <ul class="hijos-descendientes">
+            <li><b>Spring</b></li>
+            <li><b>Summer</b></li>
+            <li><b>Autumn</b></li>
+            <li><b>Winter</b></li>
+        </ul>
+        <h3>Selectores de hermanos</h3>
+        <h4>selector de hermanos en general</h4>
+        <ul>
+            <li><b>Spring</b></li>
+            <li class="hermanos-general"><b>Summer</b></li>
+            <li><b>Autumn</b></li>
+            <li><b>Winter</b></li>
+        </ul>
+        <h4>selector de hermanos adyacente</h4>
+        <ul>
+            <li><b>Spring</b></li>
+            <li class="hermanos-adyacentes"><b>Summer</b></li>
+            <li><b>Autumn</b></li>
+            <li><b>Winter</b></li>
+        </ul>
+        <a href="index.html#inicio">☣️</a>
+
+    </article>
+    <hr>
+    <article id="selectores-atributos">
+        <h3>Selectores de Atributos</h3> 
+        <nav class="selectores-atributos">
+            <ul>
+                <li><a href="https://jonmircha.com" target="_blank">Inicio</a></li>
+                <li><a class="menu-item cursos button" href="https://jonmircha.com/cursos" target="_blank">Cursos</a></li>
+                <li><a href="http://jonmircha.com/blog" target="_blank">Blog</a></li>
+                <li><a class="menu-item notas button" href="http://jonmircha.com/notas" target="_blank">Notas</a></li>
+                <li><a href="https://jonmircha.com/cv" target="_blank">CV</a></li>
+                <li><a class="menu item ahora button" href="https://jonmircha.com/ahora" target="_blank">Ahora</a></li>
+                <li><a href="index.html#incio">Regresar al Temario</a></li>
+            </ul>
+        </nav>
+        <a href="index.html#inicio">☣️</a>
+    </article>
+    <hr>
+    <article id="selector-universal">
+        <h3>Selector Universal</h3>
+        <ul class="selector-universal">
+            <li><b>Spring</b></li>
+            <li><b>Summer</b></li>
+            <li><b>Autumn</b></li>
+            <li><b>Winter</b></li>
+        </ul>
+        <a href="index.html#inicio">☣️</a>
+    </article>
+    <hr>
+    <article id="pseudoclases">
+        <h2>Pseudoclases</h2>
+        <!-- https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes -->
+        <form action="" class="form-pseudoclases">
+            <input type="text" name="nombre" id="" placeholder="writting your name" required>
+            <br>
+            <input type="email" name="correo" id="" placeholder="your mail" required>
+            <br>
+            <input type="submit" disabled>
+        </form>
+        <nav class="menu-pseudoclases">s
+            <a href="#seccion1">Seccion 1</a>
+            <a href="#seccion2">Seccion 2</a>
+            <a href="#seccion3">Seccion 3</a>
+            <a href="#seccion4">Seccion </a>
+            <a href="index.html#inicio">☣️</a>
+        </nav>
+        <p class="p-pseudoclases">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident ex magnam illo, totam soluta ad consequatur odio, quis quas sint non voluptatem enim eaque quos atque voluptates ullam minus harum.
+        </p>
+        <ol class="lista-pseudoclases">
+            <li>Mu de aries</li>
+            <li>aldebaran de tauro</li>
+            <li>saga & cannon de geminis</li>
+            <li>death mask de cancer</li>
+            <li>aioria de leo</li>
+            <li>shaka de virgo</li>
+            <li>dohko de libra</li>
+            <li>milo de escorpion</li>
+            <li>aioros de sagitario</li>
+            <li>shura de capricornio</li>
+            <li>camus de acuario</li>
+            <li>afrodita de piscis</li>
+        </ol>
+        <article class="articulo-pseudoclases">
+            <header>Esto es un header</header>
+            <p>esto es un p</p>
+            <div>esto es una div</div>
+            <p>esto es un p</p>
+            <section>esto es una section</section>
+            <p>esto es un p</p>
+            <div>esto es una div</div>
+            <p>esto es un p</p>
+            <footer>esto es un footer </footer>
+        </article>
+
+    </article>
+    <a href="index.html#inicio">☣️</a>
+    <hr>
+    <br>
+    <article id="pseudoelementos">
+        <h2>Pseudoelementos</h2>
+        <!-- dan estilos a partes especificas del codigo -->
+        <p> 
+            <i>Bandai Myth Cloth Ex</i> <span class="saga-geminis">Saga de Geminis</span> <span class="saga-precio">500</span>
+        </p>
+
+        <p class="p-pseudoelementos">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio in minima et, ipsam itaque provident, neque sunt sapiente, illo consequatur beatae magnam placeat. Illum, nostrum! Nisi quia perferendis deleniti voluptate?
+        </p>
+
+        <input class="input-pseudoelementos" type="text" name="nombre" id="" placeholder="Escribe tu nombre">
+    <a href="index.html#inicio">☣️</a>
+    </article>
+    <hr>
+    <br>
+    <article id="agrupar-selectores">
+        <h2>Agrupar Selectores</h2>
+        <form action="" class="form-agrupar-selectores">
+            <input type="text" name="nombre" id="" placeholder="Escribe tu nombre">
+            <input type="email" name="nombre" id="" placeholder="Escribe tu mail">
+            <textarea name="comentarios" id="" cols="30" rows="10" placeholder="escribe tus comentarios"></textarea>
+            <input type="submit">
+        </form>
+        <a href="index.html#inicio">☣️</a>
+    </article>
+    <hr>
+    <br>
+    <article id="algoritmo-css">
+        <h2>El algoritmo de CSS</h2>
+        <ul>
+            <li>la Cascada</li>
+            <li>la Especificidad</li>
+            <li>La herencia</li>
+            <!-- https://web.dev/learn/css/inheritance/#which-properties-are-inheritable -->
+        </ul>
+        <blockquote id="cita-marco" class="cita-marco">
+            Se tolerante con los demas y estricto contigo mismo - <cite>Marco Aurelio</cite>
+        </blockquote>
+    <a href="index.html#inicio">☣️</a>
+    </article>
+    <hr>
+    <br>
+    <article id="reseteo-nomalizacion">
+        <h2>reseteo y nomalizacion</h2>
+        <p>
+            https://necolas.github.io/normalize.css/ 
+            https://meyerweb.com/eric/tools/css/reset/
+        </p> 
+        <a href="index.html#inicio">☣️</a>
+    </article>
+    <hr>
+    <br>
+    <article id="prefijos-navegadores">
+        <h2>prefijos de los navegadores</h2>
+        <ul>
+            <li>Navegadores microsoft <code><b>-ms-</b></code> </li>
+            <li>Firefox <code><b>-moz-</b></code></li>
+            <li>Los demas <code><b>-webkit-</b></code></li>
+        </ul>
+        <!-- https://autoprefixer.github.io/ -->
+        <a href="index.html#inicio">☣️</a>
+
+    </article>
+</body> 
+</html>

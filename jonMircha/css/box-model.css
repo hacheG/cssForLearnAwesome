@@ -1,0 +1,110 @@
+/*content - padding  -border - margin*/
+h1{
+    width: 400px;
+    height: 200px;
+    border-width: 1px;
+    border-style: solid;
+    border: 2px dashed red
+}
+
+.caja-uno,
+.caja-dos{
+    background-color: chocolate;
+    border: medium solid orange;
+
+    padding: 10px;
+    margin: 10px;
+}
+/*los elementos en linea empujan a los demas en la horizontal
+entonces se empiezan a montar arriba y abajo*/
+.caja-bloque,
+.caja-linea{
+    background-color: darkcyan;
+    width: 500px;
+    height: 250px;
+    color: white;
+    padding: 16px;
+    border: 1px solid red;
+    /* margin: 32px; */
+}
+
+.caja-bloque{
+    margin: 32px;
+}
+
+.caja-linea{
+    margin: 48px;/*solo toma los valores a los lados*/
+}
+
+.caja-none,
+.caja-linea-bloque,
+.caja-hidden{
+    background-color: darkolivegreen;
+    color: white;
+    /* padding: 0 16px; */
+    width: 600px;
+    height: 300px;
+    border: 1px solid black;
+    
+}
+
+.caja-none{
+/*SE OCULTA EL ELEMENTO PERO SI SE CARGA EN EL HTML, EN MOVIL PUEDE GASTAR DATOS*/
+/*el espacio que ocupa desaparece*/
+display: none;
+}
+
+.caja-linea-bloque{
+    display: inline-block;/**sigue siendo inline, pero se deja modificar sus dimensiones*/
+}
+
+.caja-hidden{
+    visibility:hidden/*oculta contenido pero el espacio sigue ocupandose en el html -visble/hidden -*/
+}
+
+.overflow{
+    background-color: darkturquoise;
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    overflow: scroll;/*muestra ambas barras de desplazamiento*/
+    overflow: auto;/*solo deja la barra vertical, por que es ahi dond e se necesita*/
+    /*overflow-y:scroll*/
+}
+
+.box-sizing-content,
+.box-sizing-border{
+    background-color: deepskyblue;
+    box-sizing: content-box;
+    width: 500px;
+    height: 250px;
+    padding: 10px;
+    border: thick solid brown;
+}
+
+.box-sizing-border{
+    box-sizing: border-box;
+}
+
+.container-col-3{
+    background-color: burlywood;
+    width: 600px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.container-col-3 > *{
+    width: 200px;
+    float: left;
+    border: thin solid red;/*toca cambiar el 600 a 606 en el width*/
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit; /*paul irish*/
+}
